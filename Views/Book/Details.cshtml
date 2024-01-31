@@ -1,0 +1,67 @@
+﻿@model Book
+<h3>Book Details:</h3>
+<hr />
+<div>
+    <dl class="row">
+        <dt class="col-md-4">
+            @Html.DisplayNameFor(model => model.Title)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.Title)
+        </dd>
+
+        <dt class ="col-md-4">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt class ="col-md-4">
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+        <dt class="col-md-4">
+            @Html.DisplayNameFor(model => model.DatePublished)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.DatePublished)
+        </dd>
+
+        <dt class="col-md-4">
+            @Html.DisplayNameFor(model => model.Genre)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.Genre)
+        </dd>
+
+        <dt class="col-md-4">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-md-8">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+    </dl>
+</div>
+
+<a asp-controller="Book" asp-action="Index">Back to List</a>
+
+       @*  <table class="table" table-bordered table-striped>
+            <tr>
+                <td>Title</td>
+                <td>@Model.Title</td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td>@Model.Description</td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td>@Model.Author</td>
+            </tr>
+
+        </table> *@
